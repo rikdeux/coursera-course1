@@ -1,0 +1,95 @@
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+
+h2 {
+    font-size: 28px;
+    display: inline-block;
+    padding: 2px 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+}
+
+p {
+    /*font: ;*/
+    font-size: 16px;
+    margin: 15px
+}
+
+#title_chicken {
+    color: white;
+    background-color: black;
+}
+
+#title_beef {
+    color: yellow;
+    text-align: right;
+    background-color: black;
+    
+}
+
+#title_sushi {
+    color: red;
+    text-align: right;
+    background-color: black;
+
+}
+
+
+
+/* Media Queries: Desktop 992px and above*/
+@media (min-width: 992px) {
+    div {
+        background: green;
+        box-sizing: border-box;
+        float: left;
+        margin: 10px;
+        width: 30%;
+        height: 250px;
+        border: 3px solid black;
+        position: relative;
+    }
+}
+
+
+/* Media Queries: Tablet 768px - 991px, inclusively */
+@media (min-width: 767px) and (max-width: 991px) {
+    div {
+        background: grey;
+        box-sizing: border-box;
+        float: left;
+        margin: 10px;
+        padding-top: 50px;
+        width: 47%;
+        height: 250px;
+        position: relative;
+    }
+    .beef {
+        clear: right;
+        float: right;
+    }
+
+    .sushi {
+        width: 100%;
+        margin: 10px;
+    }
+}
+
+
+  /* Media Queries: Mobile equal 767px or less */
+@media (max-width: 767px) {
+    div {
+        background: cyan ;
+        height: 250px;
+        margin: 20px;
+        float: left;
+        text-overflow: auto;
+        position: relative;
+    }
+
+}
