@@ -19,10 +19,11 @@ h2 {
     padding: 5px 60px;
     display: inline-block;
     position: absolute;    
-    top: -1px;
-    right: -1px;
+    top: 0px;
+    right: 0px;
     margin: 0px;
     border: 1px solid black;
+    border-width: 0 0 1px 1px;
 }
 
 #chicken h2 {
@@ -42,34 +43,26 @@ h2 {
 
 .menu-description {
     box-sizing: border-box;
+    background-color: lightslategray;
     border: 1px solid black;
     padding: 0px;
     position: relative;
     height: 250px;
 }
 
-#chicken {
-    background-color: orange;
+.container {
+    float: left;
 }
 
-#beef {
-    background-color: yellowgreen;
-}
-
-#sushi {
-    background-color: lightsteelblue;
+.menu-description {
+    margin: 10px 10px;
+    width: auto;
 }
 
 
 /* Media Queries DESKTOP: 992px and above */
 @media (min-width: 992px) {
-    .menu-description {
-        margin: 10px 10px;
-        width: auto;
-    }
-
     .container {
-        float: left;
         width: 33%;
     }
 }
@@ -77,24 +70,17 @@ h2 {
 
 /* Media Queries TABLET: between 768px and 991px, inclusively */
 @media (min-width: 768px) and (max-width: 991px) {
-    .menu-description {
-        margin: 10px 10px;
-        width: auto;
-    }
-
-    #cont-1 {
-        float: left;
+    #chicken {
         width: 50%;
     }
 
-    #cont-2 {
+    #beef {
         float: right;
         width: 50%;
         clear: right;
     }
 
-    #cont-3 {
-        float: left;
+    #sushi {
         width: 100%;
     }
 }
@@ -102,13 +88,7 @@ h2 {
 
 /* Media Queries MOBILE: equal 767px or less */
 @media (max-width: 767px) {
-    .menu-description {
-        margin: 10px;
-        width: auto;
-    }
-
     .container {
-        float: left;
         width: 100%;
     }
 }
