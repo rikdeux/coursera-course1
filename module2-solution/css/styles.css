@@ -2,27 +2,27 @@ h1 {
     font-family: "Trebuchet MS" ;
     font-size: 36px;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 50px;
 }
 
 p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
-    margin: 60px 15px 15px 15px;
+    margin: 55px 15px 15px 15px;
 }
 
 h2 {
     font-family: "Trebuchet MS";
     font-style: italic;
     font-size: 24px;
-    padding: 3px 60px;
+    padding: 5px 60px;
     display: inline-block;
     position: absolute;    
-    top: -3px;
-    right: -3px;
+    top: -1px;
+    right: -1px;
     margin: 0;
-    border: 3px solid black;
+    border: 1px solid black;
 }
 
 #chicken h2 {
@@ -42,51 +42,73 @@ h2 {
 
 .menu-description {
     box-sizing: border-box;
-    border: 3px solid black;
-    background-color: grey;
+    border: 1px solid black;
     padding: 0px;
     position: relative;
     height: 250px;
-    
+}
+
+#chicken {
+    background-color: orange;
+}
+
+#beef {
+    background-color: yellowgreen;
+}
+
+#sushi {
+    background-color: lightsteelblue;
 }
 
 
-/* Media Queries: DESKTOP --992px and above-- */
-@media (min-width: 991px) {
+/* Media Queries DESKTOP: 992px and above */
+@media (min-width: 992px) {
     .menu-description {
+        margin: 10px 10px;
+        width: auto;
+    }
+
+    .container {
         float: left;
-        margin: 10px;
-        width: 31%;
+        width: 33%;
     }
 }
 
 
-/* Media Queries: TABLET --between 768px and 991px, inclusively-- */
+/* Media Queries TABLET: between 768px and 991px, inclusively */
 @media (min-width: 768px) and (max-width: 991px) {
     .menu-description {
+        margin: 10px 10px;
+        width: auto;
+    }
+
+    #cont-1 {
         float: left;
-        margin: 10px;
-        width: 47%;
+        width: 50%;
     }
 
-    #beef {
-        clear: right;
+    #cont-2 {
         float: right;
+        width: 50%;
+        clear: right;
     }
 
-    #sushi {
-        width: 98%;
-        margin: 10px;
+    #cont-3 {
+        float: left;
+        width: 100%;
     }
 }
 
 
-/* Media Queries: MOBILE --equal 767px or less-- */
+/* Media Queries MOBILE: equal 767px or less */
 @media (max-width: 767px) {
     .menu-description {
-        width: 97%;
         margin: 10px;
+        width: auto;
+    }
+
+    .container {
         float: left;
-        text-overflow: auto;
+        width: 100%;
     }
 }
