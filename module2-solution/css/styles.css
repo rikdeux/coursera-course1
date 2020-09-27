@@ -28,12 +28,12 @@ h2 {
 
 #chicken h2 {
     color: black;
-    background: pink;
+    background-color: pink;
 }
 
 #beef h2 {
     color: white;
-    background: red;
+    background-color: red;
 }
 
 #sushi h2 {
