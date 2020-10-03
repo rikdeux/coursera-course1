@@ -19,7 +19,6 @@ section {
     overflow: hidden;
 }
 
-
 #header-nav {
     background-color: gainsboro;
     border-radius: 0;
@@ -27,7 +26,7 @@ section {
 }
 
 #collapsable-nav{
-    margin-top: 2px;
+    margin-top: -28px;
 }
 
 #nav-list {
