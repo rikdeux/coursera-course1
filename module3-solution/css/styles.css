@@ -19,19 +19,24 @@ section {
     overflow: hidden;
 }
 
+.navbar {
+    margin-bottom: 0;
+}
+
 #header-nav {
     background-color: gainsboro;
     border-radius: 0;
     height: 70px;
 }
 
-#collapsable-nav{
-    margin-top: -28px;
+#collapsable-nav {
+    margin-top: 0px;
 }
 
 #nav-list {
     text-align: center;
     background: grey;
+    margin-top: 0px;
 }
 
 #nav-list span {
@@ -96,11 +101,3 @@ h4 {
 }
 
 
-
-/* Desktop mockup illustration should correspond to Bootstrap md-based classes */
-
-
-/* Tablet mockup illustration should correspond to Bootstrap sm-based classes */
-
-
-/* Mobile mockup illustration should correspond to Bootstrap xs-based classes */
